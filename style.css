@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  position: relative;
+}
+footer {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(images/bg-intro-desktop.png);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+main img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card {
+  display: flex;
+  padding: 50px;
+  gap: 40px;
+  z-index: 5;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: white;
+  font-size: 16px;
+}
+.left-side h1 {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 420px;
+}
+.left-side p {
+  font-size: 14px;
+  line-height: 1.5;
+  width: 440px;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.promo-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  padding: 15px 45px;
+  border-radius: 5px;
+  background: hsl(248, 32%, 49%);
+  box-shadow: 0 6px 0 rgba(40,40,40,0.2);
+}
+.promo-offer p span {
+  font-weight: bolder;
+}
+.login-form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  width: 420px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 6px 0 rgba(40,40,40,0.2);
+}
+
+/* error message design */
+.login-form-card .first-name-error {
+  color: red;
+  font-style: italic;
+  text-align: end;
+  display: none;
+}
+.login-form-card .last-name-error {
+  color: red;
+  font-style: italic;
+  text-align: end;
+  display: none;
+}
+.login-form-card .email-error {
+  color: red;
+  font-style: italic;
+  text-align: end;
+  display: none;
+}
+.login-form-card .password-error {
+  color: red;
+  font-style: italic;
+  text-align: end;
+  display: none;
+}
+/* end */
+
+.input-wrapper {
+  position: relative;
+}
+input {
+  padding: 15px 20px;
+  border-radius: 3px;
+  border: 1px solid hsl(249, 10%, 26%, 0.2);
+  color: hsl(248, 32%, 49%);
+  font-weight: bold;
+  width: 100%;
+}
+input:focus {
+  outline: 1px solid hsl(246, 25%, 77%);
+}
+.input-error::placeholder {
+  color: red;
+  font-style: italic;
+}
+/* .error-email-state {
+  font-style: italic;
+} */
+.FN-error-icon {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+.LN-error-icon {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+.email-error-icon {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+.pass-error-icon {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+.login-form-card button {
+  padding: 15px;
+  background: hsl(154, 59%, 51%);
+  border: none;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(40,40,40,0.4);
+  transition: 0.2s;
+}
+.login-form-card button:hover {
+  background: hsl(154, 70%, 63%);
+}
+.login-form-card button:active {
+  transform: scale(0.8);
+}
+.login-form-card p {
+  text-align: center;
+  font-size: 10px;
+  color: hsl(246, 25%, 77%);
+}
+.login-form-card p a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+}
+.login-form-card p a:hover {
+  text-decoration: underline;
+}
+
+/* thank you state */
+.thank-you-wrapper {
+  display: none;
+}
+.ty-card {
+  position: relative;
+  background: rgb(40,40,40);
+  padding: 40px 15px 20px 15px;
+  border-radius: 10px;
+}
+.ty-card::before {
+  position: absolute;
+  content: '';
+  top: 15px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: red;
+}
+.ty-card::after {
+  position: absolute;
+  content: '';
+  top: 15px;
+  left: 35px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.ty-card h1 {
+  color: white;
+}
+.ty-card h1::before {
+  position: absolute;
+  content: '';
+  top: 15px;
+  left: 55px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: green;
+}
+.ty-card h1::after {
+  position: absolute;
+  content: '';
+  top: 15px;
+  right: 15px;
+  height: 5px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+
+/* for responsive design */
+
+
+@media screen and (max-width: 375px) {
+  main {
+    background-image: url(images/bg-intro-mobile.png);
+  }
+  .card {
+    flex-direction: column;
+    padding: 20px;
+    width: 98%;
+  }
+  .left-side h1{
+    width: 310px;
+    text-align: center;
+  }
+  .left-side p {
+    width: 260px;
+    text-align: center;
+  }
+  .login-form-card {
+    width: auto;
+  }
+  .login-form-card p {
+    flex-direction: column;
+    align-self: center;
+    width: 200px;
+  }
+  .promo-offer {
+    padding: 20px;
+  }
+  .promo-offer p {
+    width: 150px;
+    text-align: center;
+  }
+
+  /* thank you state */
+
+  .ty-card {
+    position: relative;
+    background: rgb(40,40,40);
+    padding: 30px 10px 10px 10px;
+    border-radius: 10px;
+    width: 350px;
+  }
+  .ty-card::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  .ty-card::after {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: 30px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: orange;
+  }
+  .ty-card h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .ty-card h1::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: 50px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: green;
+  }
+  .ty-card h1::after {
+    position: absolute;
+    content: '';
+    top: 15px;
+    right: 15px;
+    height: 5px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: aqua;
+  }
+}
