@@ -97,24 +97,28 @@ main img {
   font-style: italic;
   text-align: end;
   display: none;
+  transition: 0.2s;
 }
 .login-form-card .last-name-error {
   color: red;
   font-style: italic;
   text-align: end;
   display: none;
+  transition: 0.2s;
 }
 .login-form-card .email-error {
   color: red;
   font-style: italic;
   text-align: end;
   display: none;
+  transition: 0.2s;
 }
 .login-form-card .password-error {
   color: red;
   font-style: italic;
   text-align: end;
   display: none;
+  transition: 0.2s;
 }
 /* end */
 
@@ -128,6 +132,7 @@ input {
   color: hsl(248, 32%, 49%);
   font-weight: bold;
   width: 100%;
+  transition: 0.2s;
 }
 input:focus {
   outline: 1px solid hsl(246, 25%, 77%);
